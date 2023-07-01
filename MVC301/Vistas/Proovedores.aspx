@@ -21,12 +21,10 @@
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
             <br />
-            <br />
-            <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
-            <br />
-            <br />
             <asp:GridView ID="GridView1" runat="server">
             </asp:GridView>
+            <br />
+            <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
             <br />
             <asp:Button ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" />
             &nbsp;

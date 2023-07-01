@@ -25,6 +25,7 @@ namespace MVC301.Vistas
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //Agrega un nuevo registro
             proveedores prov1 = new proveedores();
 
             prov1.IdP = int.Parse(TextBox1.Text);
@@ -36,7 +37,7 @@ namespace MVC301.Vistas
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
+            //Muestra los datos y los ingresa en una tabla
             try
             {
                 int idProveedor = int.Parse(TextBox1.Text);
@@ -73,6 +74,7 @@ namespace MVC301.Vistas
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+            //Elimina un registro por ID
             proveedores prov1 = db.proveedores.Find(int.Parse(TextBox1.Text));
             prov1.IdP = int.Parse(TextBox1.Text);
             prov1.NombreP = TextBox2.Text;
@@ -83,6 +85,7 @@ namespace MVC301.Vistas
 
         protected void Button4_Click(object sender, EventArgs e)
         {
+            //Modifica un registro por ID
             proveedores prov1 = db.proveedores.Find(int.Parse(TextBox1.Text));
             prov1.IdP = int.Parse(TextBox1.Text);
             prov1.NombreP = TextBox2.Text;
