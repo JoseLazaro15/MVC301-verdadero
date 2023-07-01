@@ -27,5 +27,7 @@ namespace MVC301.Models
     
         public virtual DbSet<productos> productos { get; set; }
         public virtual DbSet<proveedores> proveedores { get; set; }
+        public virtual DbSet<vendedor> vendedor { get; set; }
+        public virtual DbSet<ventas> ventas { get; set; }
     }
 }

@@ -12,21 +12,19 @@ namespace MVC301.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class productos
+    public partial class vendedor
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public productos()
+        public vendedor()
         {
             this.ventas = new HashSet<ventas>();
         }
     
-        public int ClaveP { get; set; }
-        public string Descripcion { get; set; }
-        public Nullable<double> Precio { get; set; }
-        public Nullable<int> Existencias { get; set; }
-        public Nullable<int> IdP { get; set; }
+        public int IdVendedor { get; set; }
+        public string NombreVendedor { get; set; }
+        public Nullable<int> Edad { get; set; }
+        public string Direccion { get; set; }
     
-        public virtual proveedores proveedores { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ventas> ventas { get; set; }
     }
