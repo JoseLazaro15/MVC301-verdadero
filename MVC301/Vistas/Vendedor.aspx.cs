@@ -50,7 +50,7 @@ namespace MVC301.Vistas
                     dt.Columns.Add("Direccion");
 
                     DataRow dr = dt.NewRow();
-                    dr["Id del Vendeor"] = ven1.IdVendedor.ToString();
+                    dr["Id del Vendedor"] = ven1.IdVendedor.ToString();
                     dr["Nombre del vendedor"] = ven1.NombreVendedor;
                     dr["Edad"] = ven1.Edad.ToString();
                     dr["Direccion"] = ven1.Direccion;
@@ -61,16 +61,16 @@ namespace MVC301.Vistas
                     GridView1.DataSource = dt;
                     GridView1.DataBind();
 
-                    Label3.Text = "Se mostraron los datos";
+                    Label5.Text = "Se mostraron los datos";
                 }
                 else
                 {
-                    Label3.Text = "No se encontró el proveedor con el ID especificado";
+                    Label5.Text = "No se encontró el proveedor con el ID especificado";
                 }
             }
             catch (Exception ex)
             {
-                Label3.Text = "Ocurrió un error: " + ex.Message;
+                Label5.Text = "Ocurrió un error: " + ex.Message;
             }
 
         }
