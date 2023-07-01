@@ -7,9 +7,6 @@
     <title></title>
 </head>
 <body>
-    <p>
-        <br />
-    </p>
     <form id="form1" runat="server">
         <p>
             <asp:Label ID="Label1" runat="server" Text="Clave de producto"></asp:Label>
@@ -44,9 +41,9 @@
             <br />
             <br />
             <asp:Button ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" />
-            &nbsp;<asp:Button ID="Button2" runat="server" Text="Mostrar" />
-            &nbsp;<asp:Button ID="Button3" runat="server" Text="Eliminar" />
-            &nbsp;<asp:Button ID="Button4" runat="server" Text="Modificar" />
+            &nbsp;<asp:Button ID="Button2" runat="server" Text="Mostrar" OnClick="Button2_Click" />
+            &nbsp;<asp:Button ID="Button3" runat="server" Text="Eliminar" OnClick="Button3_Click" />
+            &nbsp;<asp:Button ID="Button4" runat="server" Text="Modificar" OnClick="Button4_Click" />
         </div>
     </form>
 </body>
