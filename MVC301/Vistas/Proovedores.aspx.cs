@@ -79,7 +79,7 @@ namespace MVC301.Vistas
             db.proveedores.Remove(prov1);
             db.SaveChanges();
             Label3.Text ="Se ha eliminado con exito";
-
+        }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
@@ -88,8 +88,7 @@ namespace MVC301.Vistas
             prov1.NombreP = TextBox2.Text;
             db.Entry(prov1).State = EntityState.Modified;
             db.SaveChanges();
-            Label3.Text ="Se ha modificado con exito";
-
+            Label3.Text = "Se ha modificado con exito";
         }
     }
 }
