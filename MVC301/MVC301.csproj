@@ -58,6 +58,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -186,6 +187,13 @@
     <Compile Include="Vistas\Vendedor.aspx.designer.cs">
       <DependentUpon>Vendedor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Database1.mdf" />
@@ -248,6 +256,7 @@
     <Content Include="Vistas\Productos.aspx" />
     <Content Include="Vistas\Proovedores.aspx" />
     <Content Include="Vistas\Vendedor.aspx" />
+    <Content Include="Vistas\Ventas.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
