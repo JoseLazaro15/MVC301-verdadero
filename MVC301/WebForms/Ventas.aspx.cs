@@ -40,6 +40,7 @@ namespace MVC301.Vistas
             {
                 int IdVenta = int.Parse(TextBox1.Text);
                 ventas ven1 = db.ventas.Find(IdVenta);
+                vendedor vend1 = new vendedor();
 
                 if (ven1 != null)
                 {

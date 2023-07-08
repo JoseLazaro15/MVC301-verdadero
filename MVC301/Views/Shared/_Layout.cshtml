@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("MVC 301", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,10 @@
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Proovedores", "Index", "Proveedores", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Productos", "Index", "Productos", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
+                    <li>@Html.ActionLink("Ventas", "Index", "Ventas", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Vendedores", "Index", "Vendedors", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>Actionlink</li>
+</ul>
             </div>
         </div>
     </nav>
