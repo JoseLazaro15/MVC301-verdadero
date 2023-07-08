@@ -11,12 +11,8 @@ namespace MVC301
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.RouteExistingFiles = true;
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.IgnoreRoute("Content/{*pathInfo}");
-            routes.IgnoreRoute("Scripts/{*pathInfo}");
-            routes.IgnoreRoute("{WebPage}.aspx/{*pathInfo}");
-            routes.IgnoreRoute("{resource}.ashx/{*pathInfo}");
+
 
             routes.MapRoute(
                 name: "Default",
