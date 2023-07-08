@@ -135,7 +135,6 @@
     <Compile Include="Controllers\proveedoresController.cs" />
     <Compile Include="Controllers\vendedorsController.cs" />
     <Compile Include="Controllers\ventasController.cs" />
-    <Compile Include="DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

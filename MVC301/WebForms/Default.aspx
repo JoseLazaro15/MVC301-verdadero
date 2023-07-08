@@ -10,10 +10,15 @@
                 <h1>INDEX</h1><br />
             <br />
             <h2>Bienvenido a la aplicacion MVC 301</h2>
-            <p>&nbsp;</p>
-            <p><a href="WebForms/Productos.aspx.cs">Productos</a></p>
 
     <form id="form1" runat="server">
+            <p><a href="Productos.aspx">
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="height: 29px" Text="Productos" />
+            </a></p>
+
+            <p><a href="Productos.aspx">Productos</a></p>
+        <p>&nbsp;</p>
+
         <div>
 
         </div>
